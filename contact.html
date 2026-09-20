@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<!--html--!>
+<html lang= "EN">
+<head>
+<title> Celebrating Women in IT </title>
+<!--Icon--!>
+<link rel="icon" type="image/logo.png" href="images/logo.png">
+<link rel="stylesheet" href="style.css" type="text/css">
+<!--Responsive website meta--!>
+<meta name = "viewport" content="width=device-width, initial-scale =1.0">
+
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo+Black&display=swap">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fredoka&display=swap">
+</head>
+<body>
+
+<!--Header--!>
+<div class="logo"><img src="images/logo.png" alt="Women in IT logo"></div>
+
+<div class = "header">
+<h1>A Celebration of Women in IT</h1>
+<p>Remembering our roots</p>
+
+<div class="nav">
+	<a href="index.html">Home</a>
+	<a href="stories.html">Stories</a>
+
+	<a href="careers.html">Careers</a>
+</div>
+</div>
+
+
+<!--Contact us--!>
+<div class="contact">
+
+	<h2>Contact us</h2>
+	<div class="contact-form">
+		<h3>General enquiries</h3>
+		<form>
+			<label>Your Email</label>
+			<input type="email" placeholder="Email address" required><br>
+			<label>Topic</label>
+			<input type="text" placeholder="Topic" required><br>
+			<label>Message</label>
+			<textarea placeholder="Message" required></textarea><br>
+			<button type="submit">
+				Submit
+			</button>
+		</form>
+
+</div>
+
+
+<!--Contact details--!>
+<div class="contact-details">
+	<h3>Contact us directly</h3>
+		<h4>Email</h4>
+		<p>CelebrateWomenIT@gmail.com</p>
+		
+		<h4>Phone number</h4>
+		<p>022 075 2283</p>
+
+</div>
+
+</div>
+
+<!-- Footer --!>
+<div id="footer">
+	<div class="newsletter">
+		<h2>Sign up to our newsletter</h2>
+		<form>
+			<input type="email" placeholder="Email address">
+			<button onclick = "formsubmit()" type="submit">Submit</button>
+		</form>
+<!-- Submission alert --!>
+<script>
+	function formsubmit(){
+	alert("Email Submitted Successfully!");
+	}
+	//Prevent submit if no email has been entered
+	function formsubmit(event) {
+    event.preventDefault();
+    alert("Email Submitted Successfully!");
+}
+</script>
+
+		<p>Get all the latest updates on women in IT!</p>
+	</div>
+
+	<div class="footer-links">
+
+
+		<a href="stories.html">Stories</a>
+		<a href="careers.html">Careers</a>
+		<a href="index.html">Home</a>
+
+	</div>
+	<div class="social">
+
+	</div>
+<div id=copyright>
+	<h3>© Copyright 2029</h3>
+</div>
+
+</div>
+
+
+</body>
