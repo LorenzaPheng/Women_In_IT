@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<!--html--!>
+<html lang= "EN">
+<head>
+<title> Celebrating Women in IT </title>
+<!--Icon--!>
+<link rel="icon" type="image/logo.png" href="images/logo.png">
+<link rel="stylesheet" href="style.css" type="text/css">
+<!--Responsive website meta--!>
+<meta name = "viewport" content="width=device-width, initial-scale =1.0">
+
+
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo+Black&display=swap">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fredoka&display=swap">
+</head>
+<body>
+
+<!--Header--!>
+<div class="logo"><img src="images/logo.png" alt="Women in IT logo"></div>
+
+<div class = "header">
+<h1>A Celebration of Women in IT</h1>
+<p>Remembering our roots</p>
+
+<div class="nav">
+	<a href="index.html">Home</a>
+	<a href="stories.html">Stories</a>
+
+	<a href="contact.html">Contact us</a>
+</div>
+</div>
+<div id="careercategoryhead">
+<h2>Choose your area of interest!</h2>
+</div>
+<div id="itcategories">
+<a href="#careerprogsoft"><img src="images/scroll_button.png" alt="Programming & Software"><p>Programming & Software</p></a>
+<a href="#careernasaspace"><img src="images/scroll_button.png" alt="NASA & Space Technology"><p>NASA & Space Technology</p></a>
+<a href="#careerscieng"><img src="images/scroll_button.png" alt="scroll button to Science & Engineering"><p>Science & Engineering</p></a>
+</div>
+
+<button onclick="topFunction()" id="topbtn" title="Go to top">Top</button>
+
+<script>
+function topFunction(){
+    document.getElementById("itcategories").scrollIntoView();
+}
+<!--Get the top button:--!>
+let mybutton = document.getElementById("topbtn");
+<!--// When the user scrolls down 20px from the top of the document, show the button--!>
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 60 || document.documentElement.scrollTop > 20) {
+    mybutton.style.display = "block";
+  } else {
+    mybutton.style.display = "none";
+  }
+}
+
+// When the user clicks on the button, scroll to the top of the document
+function topFunction() {
+  document.body.scrollTop = 0; // For Safari
+  document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+}
+</script>
+
+<div id="careercategories">
+	<div id="careerprogsoft">
+		<h2>Programming & Software</h2>
+		<h3>Software Engineering</h3>
+		
+		<img src="images/softengineer.jpg" alt="software engineering">
+		<h3>Subject overview</h3>
+		<p>
+		Software Engineering is behind many of the technologies we now take for granted. It is seen in virtually all sectors of today’s economy, from handhel
+		d smart devices to cloud services and large telecommunications networks. Offered by our Department of Electrical, Computer, and Software
+		Engineering, the specialisation covers software architecture, system performance, testing and quality assurance, requirements engineering, human-computer
+		interaction, and documentation. Because the field is largely project-oriented, <br><br>
+		software engineers also familiarise themselves with the ethical, social, legal, economical and safety issues relevant to users today.
+		Software engineers often see their core skills as complementary to their personal interests, and demand for professionals in th
+		is field will continue to increase alongside the need to create and improve products for today’s technologically-savvy environments and users.
+		</p>
+		
+		
+	</div>
+	<div id="careernasaspace">
+		<h2>NASA & Space Technology</h2>
+		<h3>Space engineering</h3>
+		
+		<img src="images/spaceengineer.jpg" alt="space engineering">
+		<h3>Subject overview</h3>
+		<p>
+		Microvibration produced by the functioning of onboard equipment – such as reaction wheel assemblies, cryocoolers, pointing mechanisms and 
+		more – and propagating through the spacecraft structure can seriously degrade the performance of accurately targeted payloads that include 
+		high-resolution cameras or telescopes, and interferometers.<br><br>
+		Our work is on the modelling and control of microvibrations. In particular, we carry out theoretical modelling of transmission and control, 
+		supported by experimental verification activities and on-orbit validation.
+		</p>
+		
+	</div>
+	<div id="careerscieng">
+		<h2>Science & Engineering</h2>
+		<h3>Science engineering</h3>
+		
+		<img src="images/sciengineer.jpg" alt="science engineering">
+		<h3>Subject overview</h3>
+		<p>
+		Engineering Science underpins all modern engineering practice, focusing on the development and use of computer models to understand, plan
+		and control our world. This specialisation prompts students to answer complex questions using the power of computers, mathematics, and technology. 
+		This creates versatile thinkers who are in high demand in many industries today.<br><br>
+
+		With an emphasis on project work, Engineering Science prompts questions relevant to the real worldOur graduates are found in many of New Zealand’s 
+		leading companies, including Air New Zealand, Navman and Meridian Energy, as well as government organisations such as NIWA and Transpower, and consultancy 
+		firms like Beca and Maunsell. Many graduates also find fulfilling careers overseas. Engineering Science opens up opportunities within fields that require 
+		the modelling of optimal production processes, advanced programming skills, and logical thinking. So you may potentially see yourself in management or 
+		software design roles in the engineering, industrial, medical, service or business sector.
+		</p>
+	</div>
+</div>
+<!-- Footer --!>
+<div id="footer">
+	<div class="newsletter">
+		<h2>Sign up to our newsletter</h2>
+		<form>
+			<input type="email" placeholder="Email address">
+			<button onclick = "formsubmit()" type="submit">Submit</button>
+		</form>
+<!-- Submission alert --!>
+<script>
+	function formsubmit(){
+	alert("Email Submitted Successfully!");
+	}
+</script>
+
+		<p>Get all the latest updates on women in IT!</p>
+	</div>
+
+	<div class="footer-links">
+
+
+		<a href="stories.html">Stories</a>
+		<a href="index.html">Home</a>
+		<a href="contact.html">Contact us</a>
+
+	</div>
+	<div class="social">
+
+	</div>
+<div id=copyright>
+	<h3>© Copyright 2029</h3>
+</div>
+
+</div>
+
+
+</body>
