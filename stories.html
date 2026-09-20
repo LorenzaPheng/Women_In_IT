@@ -1,0 +1,404 @@
+<!DOCTYPE html>
+<!--html--!>
+<html lang= "EN">
+<head>
+<title> Celebrating Women in IT </title>
+<!--Icon--!>
+<link rel="icon" type="image/logo.png" href="images/logo.png">
+<link rel="stylesheet" href="style.css" type="text/css">
+<!--Responsive website meta--!>
+<meta name = "viewport" content="width=device-width, initial-scale =1.0">
+
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo+Black&display=swap">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fredoka&display=swap">
+</head>
+<body>
+
+<!--Header--!>
+<div class="logo"><img src="images/logo.png" alt="women in IT celebration logo"></div>
+
+<div class = "header">
+<h1>A Celebration of Women in IT</h1>
+<p>Remembering our roots</p>
+
+<div class="nav">
+	<a href="index.html">Home</a>
+	<a href="careers.html">Careers</a>
+
+	<a href="contact.html">Contact us</a>
+</div>
+</div>
+
+<div id="categoryhead">
+<h2>Choose a category!</h2>
+</div>
+
+<div id="itcategories">
+<a href="#progsoft"><img src="images/scroll_button.png" alt="scroll to programming and software button"><p>Programming & Software</p></a>
+<a href="#nasaspace"><img src="images/scroll_button.png" alt="scroll to NASA & Space Technology button"><p>NASA & Space Technology</p></a>
+<a href="#scieng"><img src="images/scroll_button.png" alt="scroll to Science & Engineering button"><p>Science & Engineering</p></a>
+</div>
+<button onclick="topFunction()" id="topbtn" title="Go to top">Top</button>
+
+<script>
+function topFunction(){
+    document.getElementById("itcategories").scrollIntoView();
+}
+<!--Get the top button:--!>
+let mybutton = document.getElementById("topbtn");
+<!--// When the user scrolls down 20px from the top of the document, show the button--!>
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 60 || document.documentElement.scrollTop > 20) {
+    mybutton.style.display = "block";
+  } else {
+    mybutton.style.display = "none";
+  }
+}
+
+// When the user clicks on the button, scroll to the top of the document
+function topFunction() {
+  document.body.scrollTop = 0; // For Safari
+  document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+}
+</script>
+
+<div id="categories">
+	<div id="progsoft">
+		<h2>Programming & Software</h2>
+		<div id="ada">
+		<img src="images/adalovelace.jpg" alt="image of ada lovelace">
+		<div class="profinfo">
+			<h3>Ada Lovelace</h3>
+			<p>10 December 1815 - 27 November 1852<br><br>
+			Mathematician</p>
+			<p>Wrote an algorithm for Charles Babbage's Analytical Engine, widely considered the first published computer program.</p>
+			<button type="button" class="collapsible">Read more</button>
+			<div class="profpara">
+			<p>
+			Ada Lovelace was an English mathematician who is often 
+			described as the world's first computer programmer. While working with Charles Babbage's plans for the Analytical Engine, 
+			she recognised that the machine could be used for more than mathematical calculations. Her ideas about programming and the
+			potential of computers were far ahead of her time.
+			</p>
+			</div>
+		</div>
+		</div>
+		
+		<div id="grace">
+    <img src="images/grace.jpg" alt="image of Grace hopper">
+		<div class="profinfo">
+        <h3>Grace Hopper</h3>
+        <p>
+            9 December 1906 - 1 January 1992
+            <br><br>
+            Computer Scientist, Mathematician, U.S. Navy Rear Admiral
+        </p>
+        <p>
+            Helped develop COBOL and pioneered compiler technology.
+        </p>
+        <button type="button" class="collapsible">Read more</button>
+			<div class="profpara">
+				<p>
+					Grace Hopper was an American computer scientist who
+					played an important role in making programming more accessible.
+					She helped develop compilers, which translate human-written
+					instructions into a form computers can understand, and contributed
+					to the development of COBOL. Her work influenced how modern
+					programming languages are designed and used.
+				</p>
+			</div>
+		</div>
+		</div>
+		
+		<div id="margaret">
+    <img src="images/margaret.jpg" alt="image of margaret hamilton">
+    <div class="profinfo">
+        <h3>Margaret Hamilton</h3>
+        <p>
+            17 August 1936 - Present
+            <br><br>
+            Computer Scientist, Software Engineer
+        </p>
+        <p>
+            Led the development of the Apollo spacecraft's onboard flight software.
+        </p>
+        <button type="button" class="collapsible">Read more</button>
+
+        <div class="profpara">
+            <p>
+                Margaret Hamilton is an American computer scientist and
+                software engineer who worked on NASA's Apollo missions. She led
+                the team responsible for developing the software that helped
+                guide the Apollo spacecraft. Her work demonstrated the importance
+                of reliable software in critical situations and helped establish
+                software engineering as an important field.
+            </p>
+        </div>
+    </div>
+</div>
+
+	</div>
+
+<div id="nasaspace">
+    <h2>NASA & Space Technology</h2>
+
+    <div id="katherine">
+        <img src="images/katherine.jpg" alt="Katherine Johnson">
+
+        <div class="profinfo">
+            <h3>Katherine Johnson</h3>
+            <p>
+                26 August 1918 - 24 February 2020
+                <br><br>
+                Mathematician, NASA Research Mathematician
+            </p>
+            <p>
+                Calculated flight trajectories for NASA's early human
+                spaceflight missions.
+            </p>
+            <button type="button" class="collapsible">Read more</button>
+            <div class="profpara">
+                <p>
+                    Katherine Johnson was an American mathematician who
+                    worked for NASA and its predecessor, NACA. She performed
+                    important calculations for missions including John Glenn's
+                    orbital flight and the Apollo missions. Her mathematical
+                    work helped NASA accurately plan spacecraft trajectories
+                    and contributed to the success of America's early space
+                    programme.
+                </p>
+            </div>
+        </div>
+    </div>
+
+
+    <div id="dorothy">
+        <img src="images/dorothyvaughan.jpg" alt="image of dorothy vaughn">
+
+        <div class="profinfo">
+            <h3>Dorothy Vaughan</h3>
+
+            <p>
+                20 September 1910 - 10 November 2008
+                <br><br>
+                Mathematician, Computer Programmer, NASA Supervisor
+            </p>
+
+            <p>
+                Became an expert in FORTRAN programming and helped NASA
+                transition from human calculations to electronic computing.
+            </p>
+
+            <button type="button" class="collapsible">Read more</button>
+
+            <div class="profpara">
+                <p>
+                    Dorothy Vaughan was an American mathematician and
+                    programmer who worked at NASA's Langley Research Center.
+                    She initially performed complex calculations as a human
+                    computer before learning FORTRAN programming. She became
+                    a specialist in electronic computing and helped prepare
+                    her team for the growing use of computers in NASA's research.
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <div id="annie">
+        <img src="images/annie.jpg" alt="image of Annie easley">
+
+        <div class="profinfo">
+            <h3>Annie Easley</h3>
+
+            <p>
+                23 April 1933 - 25 June 2011
+                <br><br>
+                Computer Scientist, Mathematician, Rocket Scientist
+            </p>
+
+            <p>
+                Developed computer programs for NASA's rocket, energy and
+                propulsion research.
+            </p>
+
+            <button type="button" class="collapsible">Read more</button>
+
+            <div class="profpara">
+                <p>
+                    Annie Easley was an American computer scientist and
+                    mathematician who worked at NASA's Lewis Research Center.
+                    She began her career performing calculations by hand before
+                    learning computer programming. She developed software for
+                    energy research and worked on projects involving rocket
+                    propulsion and alternative energy technologies.
+                </p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div id="scieng">
+    <h2>Science & Engineering</h2>
+
+
+    <div id="mary">
+        <img src="images/mary.jpg" alt="image of mary jackson">
+
+        <div class="profinfo">
+            <h3>Mary Jackson</h3>
+
+            <p>
+                9 April 1921 - 11 February 2005
+                <br><br>
+                Mathematician, Aerospace Engineer
+            </p>
+
+            <p>
+                Became NASA's first Black female engineer and conducted
+                research into aerodynamics.
+            </p>
+
+            <button type="button" class="collapsible">Read more</button>
+
+            <div class="profpara">
+                <p>
+                    Mary Jackson was an American mathematician and aerospace
+                    engineer who worked at NASA's Langley Research Center.
+                    She conducted research into how air moves around aircraft
+                    and contributed to aerospace engineering projects. Later
+                    in her career, she worked to improve opportunities for
+                    women and minorities within NASA.
+                </p>
+            </div>
+        </div>
+    </div>
+
+
+    <div id="hedy">
+        <img src="images/hedy.jpg" alt="image of hedy lamarr">
+
+        <div class="profinfo">
+            <h3>Hedy Lamarr</h3>
+
+            <p>
+                9 September 1914 - 19 January 2000
+                <br><br>
+                Inventor, Actress
+            </p>
+
+            <p>
+                Co-invented a frequency-hopping communication system that
+                contributed to the development of spread-spectrum technology.
+            </p>
+
+            <button type="button" class="collapsible">Read more</button>
+
+            <div class="profpara">
+                <p>
+                    Hedy Lamarr was an Austrian-born American inventor and
+                    actress. During World War II, she and composer George
+                    Antheil developed a frequency-hopping communication system
+                    intended to prevent radio-controlled signals from being
+                    easily disrupted. Although it was not immediately used for
+                    its original purpose, the underlying technology later became
+                    important to the development of wireless communication.
+                </p>
+            </div>
+        </div>
+    </div>
+
+
+    <div id="radia">
+        <img src="images/radia.jpg" alt="image Radia perlman">
+
+        <div class="profinfo">
+            <h3>Radia Perlman</h3>
+
+            <p>
+                18 December 1951 - Present
+                <br><br>
+                Computer Scientist, Network Engineer
+            </p>
+
+            <p>
+                Invented the Spanning Tree Protocol (STP), which helps computer
+                networks avoid connection loops.
+            </p>
+
+            <button type="button" class="collapsible">Read more</button>
+
+            <div class="profpara">
+                <p>
+                    Radia Perlman is an American computer scientist and network
+                    engineer who made major contributions to computer networking.
+                    She created the Spanning Tree Protocol, which allows
+                    interconnected computers and network devices to communicate
+                    efficiently without creating loops. Her work has helped
+                    make large computer networks more reliable and organised.
+                </p>
+            </div>
+        </div>
+    </div>
+
+</div>
+	
+</div>
+
+<!-- Collapsible script --!>
+<script>
+var coll = document.getElementsByClassName("collapsible");
+var i;
+
+for (i = 0; i < coll.length; i++) {
+  coll[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var profpara = this.nextElementSibling;
+    if (profpara.style.maxHeight){
+      profpara.style.maxHeight = null;
+    } else {
+      profpara.style.maxHeight = profpara.scrollHeight + "px";
+    }
+  });
+}
+</script>
+
+<!-- Footer --!>
+<div id="footer">
+	<div class="newsletter">
+		<h2>Sign up to our newsletter</h2>
+		<form>
+			<input type="email" placeholder="Email address">
+			<button onclick = "formsubmit()" type="submit">Submit</button>
+		</form>
+<!-- Submission alert --!>
+<script>
+	function formsubmit(){
+	alert("Email Submitted Successfully!");
+	}
+</script>
+
+		<p>Get all the latest updates on women in IT!</p>
+	</div>
+
+	<div class="footer-links">
+
+
+		<a href="index.html">Home</a>
+		<a href="careers.html">Careers</a>
+		<a href="contact.html">Contact us</a>
+
+	</div>
+	<div class="social">
+
+	</div>
+<div id=copyright>
+	<h3>© Copyright 2029</h3>
+</div>
+
+</div>
+
+
+</body>
